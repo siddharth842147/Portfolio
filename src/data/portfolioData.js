@@ -268,7 +268,8 @@ export const portfolioData = {
   ],
 
   contactConfig: {
-    formspreeEndpoint: "https://formspree.io/f/placeholder",
-    serviceType: "formspree",
+    endpoint: "https://formsubmit.co/ajax/siddharth.hm2@gmail.com",
+    email: "siddharth.hm2@gmail.com",
+    serviceType: "formsubmit",
   },
 };

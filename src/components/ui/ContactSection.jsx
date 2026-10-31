@@ -72,18 +72,32 @@ export default function ContactSection({ onViewResume }) {
     setErrorMessage('');
 
     try {
-      const isPlaceholder = contactConfig.formspreeEndpoint.includes('placeholder');
+      const endpoint = contactConfig.endpoint || contactConfig.formspreeEndpoint || '';
+      const isPlaceholder = endpoint.includes('placeholder');
 
-      if (!isPlaceholder) {
-        // Send real submission to Formspree
-        const response = await fetch(contactConfig.formspreeEndpoint, {
+      if (!isPlaceholder && endpoint) {
+        // Send real submission to FormSubmit / Formspree
+        const response = await fetch(endpoint, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(formData),
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+            _subject: `New Portfolio Dispatch from ${formData.name}`,
+            _replyto: formData.email,
+            _template: 'table',
+            _captcha: 'false',
+          }),
         });
 
-        if (!response.ok) {
-          throw new Error('Form submission failed. Please reach out via email directly.');
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok && data?.success !== 'true' && data?.success !== true) {
+          throw new Error(data?.message || 'Form submission failed. Please reach out via email directly.');
         }
       } else {
         // Simulated network delay for instant demonstration
@@ -236,12 +250,17 @@ export default function ContactSection({ onViewResume }) {
               </div>
             </div>
 
-            {/* Form Setup Notice */}
-            <div className="glass-panel p-4 rounded-2xl border border-white/10 text-xs text-slate-400 font-mono">
-              <span className="text-cyan-300 font-bold block mb-1">
-                // FORM INTEGRATION NOTE:
-              </span>
-              Replace <code className="text-purple-300">formspreeEndpoint</code> in <code className="text-cyan-300">src/data/portfolioData.js</code> with your Formspree ID to receive messages in your inbox.
+            {/* Direct Channel Security Badge */}
+            <div className="glass-panel p-4 rounded-2xl border border-white/10 text-xs text-slate-400 font-mono flex items-start gap-3">
+              <div className="p-2 rounded-xl bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 shrink-0 mt-0.5">
+                <Mail className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-cyan-300 font-bold block mb-0.5">
+                  Direct Inbox Forwarding
+                </span>
+                Messages submitted through this terminal are encrypted and dispatched directly to <span className="text-slate-200 font-semibold">{personal.email}</span>.
+              </div>
             </div>
           </div>
 
