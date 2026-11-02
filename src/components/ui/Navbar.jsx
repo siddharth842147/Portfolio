@@ -47,7 +47,7 @@ export default function Navbar({ activeSection = 0, onNavigate, onViewResume }) 
               SIDDHARTH HM
             </span>
             <span className="font-mono text-[10px] text-cyan-400/80 tracking-widest block uppercase">
-              Full-Stack Developer
+              Full Stack Software Engineer
             </span>
           </div>
         </button>

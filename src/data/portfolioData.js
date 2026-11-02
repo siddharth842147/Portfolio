@@ -1,13 +1,13 @@
 /**
  * Siddharth HM — Portfolio Central Content Model
- * Synchronized with Official Resume
+ * Synchronized with Official Resume (Full Stack Software Engineer - Fresher)
  */
 
 export const portfolioData = {
   personal: {
     name: "Siddharth HM",
-    role: "Web Developer | React.js | Node.js | MERN Stack",
-    tagline: "Web Developer | React.js | Node.js | MERN Stack",
+    role: "Full Stack Software Engineer (Fresher) | React.js | Node.js | REST APIs | AI & LLM Projects",
+    tagline: "Full Stack Software Engineer (Fresher) | React.js | Node.js | REST APIs | AI & LLM Projects",
     location: "Bangalore, Karnataka, India",
     phone: "+91 9019983348",
     email: "siddharth.hm2@gmail.com",
@@ -15,20 +15,20 @@ export const portfolioData = {
     linkedin: "https://linkedin.com/in/siddharthhm-dev",
     resumeUrl: "/resume.pdf",
     shortBio:
-      "Web developer and final-year B.E. Information Science Engineering student (CGPA 8.1/10) with hands-on experience building responsive, full-stack web applications on the MERN stack. Skilled in React.js front ends, RESTful APIs with Node.js and Express.js, MongoDB and MySQL databases, JWT authentication, and payment gateway integration (Razorpay, Stripe). Delivered paid client projects end to end, from requirements to final delivery. Seeking a Web Developer / Full-Stack Developer role.",
+      "Final-year B.E. Information Science Engineering student (CGPA 8.1/10) with hands-on experience building full-stack web applications using React.js, Node.js, Express.js and REST APIs. Delivered paid freelance projects end to end, built authentication, payment and notification features, and worked on AI-powered applications during an AI/ML internship. Strong in JavaScript, Python and SQL, with solid fundamentals and a drive to learn. Seeking a Fresher Full Stack Software Engineer role.",
     stats: [
       { label: "CGPA", value: "8.1 / 10" },
       { label: "Degree", value: "B.E. ISE (2023–2027)" },
       { label: "12th Standard", value: "87.5% (PCMC)" },
-      { label: "Focus", value: "MERN + Next.js" },
+      { label: "Target Role", value: "Full Stack Engineer" },
     ],
   },
 
   about: {
-    headline: "Engineering Scalable Web Architectures & Modern Full-Stack Systems",
+    headline: "Engineering Scalable Full-Stack Web Applications & Intelligent Systems",
     paragraphs: [
-      "I am a web developer and final-year B.E. Information Science Engineering student at Jnana Vikas Institute of Technology (CGPA 8.1/10) with hands-on experience building responsive, full-stack web applications on the MERN stack. Skilled in React.js front ends, RESTful APIs with Node.js and Express.js, MongoDB and MySQL databases, JWT authentication, and payment gateway integration (Razorpay, Stripe).",
-      "I have delivered paid client projects end to end, from requirements gathering to architecture, database design, API implementation, testing, and final delivery. Furthermore, I actively integrate AI-assisted development tools (Claude, Cursor, Codex, Amazon Q Developer) to accelerate delivery cycles while maintaining rigorous code quality and reliability.",
+      "Final-year B.E. Information Science Engineering student (CGPA 8.1/10) with hands-on experience building full-stack web applications using React.js, Node.js, Express.js and REST APIs. Delivered paid freelance projects end to end, built authentication, payment and notification features, and worked on AI-powered applications during an AI/ML internship.",
+      "Strong in JavaScript, Python and SQL, with solid fundamentals and a relentless drive to learn. Experienced in developing secure authentication systems, designing database schemas, integrating payment gateways and third-party APIs, and leveraging modern AI-assisted workflows (Claude, Cursor, Codex, Amazon Q Developer) to deliver clean, production-ready code.",
     ],
     education: [
       {
@@ -56,12 +56,12 @@ export const portfolioData = {
         skills: [
           { name: "React.js", icon: "Boxes", level: "Advanced" },
           { name: "Next.js", icon: "Layout", level: "Advanced" },
-          { name: "TypeScript", icon: "Code2", level: "Proficient" },
           { name: "JavaScript (ES6+)", icon: "Terminal", level: "Advanced" },
-          { name: "HTML5 & CSS3", icon: "Layout", level: "Expert" },
+          { name: "TypeScript", icon: "Code2", level: "Proficient" },
+          { name: "HTML5", icon: "Layout", level: "Expert" },
+          { name: "CSS3", icon: "Layout", level: "Expert" },
           { name: "Tailwind CSS", icon: "Sparkles", level: "Advanced" },
-          { name: "Responsive Web Design", icon: "Layout", level: "Expert" },
-          { name: "Reusable Components", icon: "Boxes", level: "Advanced" },
+          { name: "Responsive Design", icon: "Layout", level: "Expert" },
         ],
       },
       {
@@ -70,30 +70,21 @@ export const portfolioData = {
         skills: [
           { name: "Node.js", icon: "Server", level: "Advanced" },
           { name: "Express.js", icon: "Network", level: "Advanced" },
-          { name: "RESTful API Design", icon: "Network", level: "Advanced" },
+          { name: "RESTful API design", icon: "Network", level: "Advanced" },
           { name: "JWT Authentication", icon: "ShieldCheck", level: "Advanced" },
           { name: "Bcrypt", icon: "Binary", level: "Advanced" },
           { name: "Mongoose", icon: "Database", level: "Advanced" },
           { name: "Nodemailer", icon: "Send", level: "Proficient" },
-          { name: "PDFKit", icon: "FileText", level: "Proficient" },
         ],
       },
       {
         name: "Databases",
         color: "#00F0FF",
         skills: [
-          { name: "MongoDB", icon: "Layers", level: "Advanced" },
+          { name: "SQL", icon: "Database", level: "Advanced" },
           { name: "MySQL", icon: "Database", level: "Advanced" },
+          { name: "MongoDB", icon: "Layers", level: "Advanced" },
           { name: "Supabase", icon: "Database", level: "Proficient" },
-        ],
-      },
-      {
-        name: "Integrations",
-        color: "#F59E0B",
-        skills: [
-          { name: "Razorpay", icon: "CreditCard", level: "Advanced" },
-          { name: "Stripe", icon: "CreditCard", level: "Advanced" },
-          { name: "Google Books API", icon: "BookOpen", level: "Advanced" },
         ],
       },
       {
@@ -136,12 +127,12 @@ export const portfolioData = {
       role: "Freelance Full-Stack Developer",
       organization: "Project-based",
       period: "2024 — Present",
-      type: "Paid Client Engagements",
+      type: "Paid Freelance Projects",
       description:
-        "Developed and delivered multiple full-stack web projects on a paid basis, handling requirements gathering, implementation, testing, and final delivery.",
+        "Built and delivered multiple full-stack web applications on a paid basis, handling requirements, implementation, testing and final delivery.",
       highlights: [
-        "Developed and delivered multiple full-stack web projects on a paid basis, handling requirements gathering, implementation, testing, and final delivery",
-        "Built applications on the MERN stack with REST APIs, database design, and responsive React interfaces",
+        "Built and delivered multiple full-stack web applications on a paid basis, handling requirements, implementation, testing and final delivery",
+        "Developed REST APIs with Node.js and Express.js, designed databases, and built responsive React.js interfaces",
         "Used AI-assisted development tools to speed up coding and debugging while maintaining code quality",
       ],
       badgeColor: "#00F0FF",
@@ -152,11 +143,11 @@ export const portfolioData = {
       period: "Aug 2025 — Sep 2025",
       type: "Remote Internship",
       description:
-        "Developed an AI-powered language translator web application using Python, Streamlit, and the Deep Translator API.",
+        "Built an AI-powered language translator web application using Python, Streamlit and the Deep Translator API.",
       highlights: [
-        "Developed an AI-powered language translator web application using Python, Streamlit, and the Deep Translator API",
-        "Enabled real-time translation across 100+ languages with a minimal-input, responsive user interface",
-        "Managed source code with Git and GitHub with robust version control",
+        "Built an AI-powered language translator web application using Python, Streamlit and the Deep Translator API",
+        "Enabled real-time translation across 100+ languages with a minimal-input, responsive interface",
+        "Managed source code with Git and GitHub",
       ],
       badgeColor: "#A855F7",
     },
@@ -194,24 +185,23 @@ export const portfolioData = {
       title: "Digital Library Management System",
       category: "Full-Stack Web App (MERN)",
       description:
-        "Contributed to a full-stack college library platform covering book inventory, borrowing, returns, and QR-based student identification.",
+        "Contributed to a full-stack college library platform covering book inventory, borrowing, returns and QR-based student identification.",
       technologies: [
         "React.js",
         "Node.js",
         "Express.js",
         "MongoDB",
         "JWT & Bcrypt",
-        "Razorpay",
-        "Stripe",
+        "Razorpay & Stripe",
         "Nodemailer",
         "PDFKit",
         "Google Books API",
       ],
       features: [
-        "Contributed to a full-stack college library platform covering book inventory, borrowing, returns, and QR-based student identification",
+        "Contributed to a full-stack college library platform covering book inventory, borrowing, returns and QR-based student identification",
         "Built secure authentication with JWT and Bcrypt, and integrated Razorpay and Stripe for online fine payments",
-        "Automated email notifications with Nodemailer and generated downloadable fine receipts using PDFKit",
-        "Integrated the Google Books API for ISBN-based book lookup; developed REST APIs and reusable React components",
+        "Developed REST APIs and reusable React components; automated email notifications with Nodemailer and generated fine receipts with PDFKit",
+        "Integrated the Google Books API for ISBN-based book lookup",
       ],
       liveDemo: "https://digital-library-31g52wi9s-siddharth842147s-projects.vercel.app/",
       github: "https://github.com/siddharth842147/digital-library",
@@ -222,7 +212,7 @@ export const portfolioData = {
       title: "Kartiva – E-Commerce Website",
       category: "Full-Stack E-Commerce (Next.js & Supabase)",
       description:
-        "Built a full-stack e-commerce storefront with product listings across five categories: Books, Clothing, Electronics, Home & Kitchen, and Sports.",
+        "Built a full-stack e-commerce storefront with product listings across five categories, using Next.js, TypeScript and Supabase.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -233,10 +223,9 @@ export const portfolioData = {
         "Antigravity",
       ],
       features: [
-        "Built a full-stack e-commerce storefront with product listings across five categories: Books, Clothing, Electronics, Home & Kitchen, and Sports",
-        "Developed with Next.js, TypeScript, and Supabase, with a responsive UI styled using Tailwind CSS and shadcn/ui components",
+        "Built a full-stack e-commerce storefront with product listings across five categories, using Next.js, TypeScript and Supabase",
+        "Created a responsive UI with Tailwind CSS and shadcn/ui components",
         "Used AI-assisted development tools (Kiro, Antigravity) to build and polish the application",
-        "Engineered scalable database schemas, category navigation, dynamic filtering, and modular component hierarchy",
       ],
       liveDemo: "https://kartiva.netlify.app/shop",
       github: "https://github.com/siddharth842147/kartiva-ecommerce",
@@ -247,19 +236,17 @@ export const portfolioData = {
       title: "AI Translator Web App",
       category: "AI Web App (Python & Streamlit)",
       description:
-        "Built a responsive web application that translates text across 100+ languages in real time.",
+        "Built a responsive web app that translates text across 100+ languages in real time.",
       technologies: [
         "Python",
         "Streamlit",
         "Deep Translator API",
         "Git",
         "GitHub",
-        "REST APIs",
       ],
       features: [
-        "Built a responsive web application that translates text across 100+ languages in real time",
-        "Minimal-input, clean responsive user interface optimized for instant cross-lingual translation",
-        "Used Git and GitHub for version control and documented the project for easy setup and reproducibility",
+        "Built a responsive web app that translates text across 100+ languages in real time",
+        "Used Git and GitHub for version control and documented the project for easy setup",
       ],
       liveDemo: "https://ai-translato.netlify.app/",
       github: "https://github.com/siddharth842147/ai-translator-webapp",

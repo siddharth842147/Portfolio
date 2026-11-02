@@ -18,7 +18,7 @@ export default function HeroSection({ onExplore, onContact, onViewResume }) {
         {/* Status Eyebrow Badge */}
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-panel-cyan border border-cyan-400/40 text-cyan-300 text-xs font-mono tracking-wider mb-6 shadow-[0_0_20px_rgba(0,240,255,0.2)]">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-          <span>AVAILABLE FOR WEB DEVELOPER & FULL-STACK ROLES • 2026/2027</span>
+          <span>AVAILABLE FOR FULL STACK SOFTWARE ENGINEER ROLES • FRESHER</span>
         </div>
 
         {/* Display Name */}
@@ -27,11 +27,13 @@ export default function HeroSection({ onExplore, onContact, onViewResume }) {
         </h1>
 
         {/* Cinematic Tagline */}
-        <div className="max-w-2xl mb-8">
+        <div className="max-w-3xl mb-8">
           <p className="font-heading text-lg sm:text-2xl md:text-3xl font-medium text-slate-200 tracking-tight leading-snug">
-            Web Developer | <span className="text-cyan-400 font-semibold">React.js</span> •{' '}
+            Full Stack Software Engineer <span className="text-cyan-400 font-semibold">(Fresher)</span> |{' '}
+            <span className="text-cyan-300 font-semibold">React.js</span> •{' '}
             <span className="text-purple-400 font-semibold">Node.js</span> •{' '}
-            <span className="text-cyan-300 font-semibold">MERN Stack</span>
+            <span className="text-slate-300 font-medium">REST APIs</span> •{' '}
+            <span className="text-pink-400 font-semibold">AI & LLM Projects</span>
           </p>
         </div>
 

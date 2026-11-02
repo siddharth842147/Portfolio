@@ -1,6 +1,5 @@
 import {
   BookOpen,
-  Briefcase,
   Check,
   CheckCircle,
   Copy,
@@ -10,7 +9,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Sparkles,
   X,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -48,53 +46,54 @@ export default function ResumeModal({ isOpen, onClose }) {
 
   const handleCopyRaw = () => {
     const rawResume = `SIDDHARTH HM
-Web Developer | React.js | Node.js | MERN Stack
-Bangalore, Karnataka, India | +91 9019983348 | siddharth.hm2@gmail.com
-linkedin.com/in/siddharthhm-dev | github.com/siddharth842147
+Full Stack Software Engineer (Fresher) | React.js | Node.js | REST APIs | AI & LLM Projects
+Bangalore, Karnataka, India | +91 9019983348 | siddharth.hm2@gmail.com | linkedin.com/in/siddharthhm-dev | github.com/siddharth842147
 
 PROFESSIONAL SUMMARY
-${personal.shortBio}
+Final-year B.E. Information Science Engineering student (CGPA 8.1/10) with hands-on experience building full-stack web applications using React.js, Node.js, Express.js and REST APIs. Delivered paid freelance projects end to end, built authentication, payment and notification features, and worked on AI-powered applications during an AI/ML internship. Strong in JavaScript, Python and SQL, with solid fundamentals and a drive to learn. Seeking a Fresher Full Stack Software Engineer role.
 
 TECHNICAL SKILLS
-Front End: React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive Web Design, Reusable Components
-Back End: Node.js, Express.js, RESTful API design, JWT Authentication, Bcrypt, Mongoose, Nodemailer, PDFKit
-Databases: MongoDB, MySQL, Supabase
-Integrations: Razorpay, Stripe, Google Books API
+Front End: React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Responsive Design
+Back End: Node.js, Express.js, RESTful API design, JWT Authentication, Bcrypt, Mongoose, Nodemailer
+Databases: SQL, MySQL, MongoDB, Supabase
 Languages: JavaScript, Python, Java, C++, SQL
 Tools: Git, GitHub, Postman, VS Code, MySQL Workbench
 AI-Assisted Development: Claude, Cursor, Codex, Amazon Q Developer (Kiro)
 
-PROJECTS
-• Digital Library Management System | React.js, Node.js, Express.js, MongoDB
-  - Contributed to a full-stack college library platform covering book inventory, borrowing, returns, and QR-based student identification.
-  - Built secure authentication with JWT and Bcrypt, and integrated Razorpay and Stripe for online fine payments.
-  - Automated email notifications with Nodemailer and generated downloadable fine receipts using PDFKit.
-  - Integrated the Google Books API for ISBN-based book lookup; developed REST APIs and reusable React components.
-
-• Kartiva – E-Commerce Website | Next.js, TypeScript, Supabase, Tailwind CSS, shadcn/ui
-  - Built a full-stack e-commerce storefront with product listings across five categories: Books, Clothing, Electronics, Home & Kitchen, and Sports.
-  - Developed with Next.js, TypeScript, and Supabase, with a responsive UI styled using Tailwind CSS and shadcn/ui components.
-  - Used AI-assisted development tools (Kiro, Antigravity) to build and polish the application.
-
-• AI Translator Web App | Python, Streamlit, Deep Translator API
-  - Built a responsive web application that translates text across 100+ languages in real time.
-  - Used Git and GitHub for version control and documented the project for easy setup.
-
 EXPERIENCE
-• Freelance Full-Stack Developer | Project-based (2024 — Present)
-  - Developed and delivered multiple full-stack web projects on a paid basis, handling requirements gathering, implementation, testing, and final delivery.
-  - Built applications on the MERN stack with REST APIs, database design, and responsive React interfaces.
-  - Used AI-assisted development tools to speed up coding and debugging while maintaining code quality.
+Freelance Full-Stack Developer | Project-based
+Built and delivered multiple full-stack web applications on a paid basis, handling requirements, implementation, testing and final delivery.
+Developed REST APIs with Node.js and Express.js, designed databases, and built responsive React.js interfaces.
+Used AI-assisted development tools to speed up coding and debugging while maintaining code quality.
 
-• AI/ML Intern | Pinnacle Labs (Remote) (Aug 2025 – Sep 2025)
-  - Developed an AI-powered language translator web application using Python, Streamlit, and the Deep Translator API.
-  - Enabled real-time translation across 100+ languages with a minimal-input, responsive user interface.
-  - Managed source code with Git and GitHub.
+AI/ML Intern | Pinnacle Labs (Remote) | Aug 2025 – Sep 2025
+Built an AI-powered language translator web application using Python, Streamlit and the Deep Translator API.
+Enabled real-time translation across 100+ languages with a minimal-input, responsive interface.
+Managed source code with Git and GitHub.
+
+PROJECTS
+Digital Library Management System | React.js, Node.js, Express.js, MongoDB
+Live Demo: https://digital-library-31g52wi9s-siddharth842147s-projects.vercel.app/
+Contributed to a full-stack college library platform covering book inventory, borrowing, returns and QR-based student identification.
+Built secure authentication with JWT and Bcrypt, and integrated Razorpay and Stripe for online fine payments.
+Developed REST APIs and reusable React components; automated email notifications with Nodemailer and generated fine receipts with PDFKit.
+Integrated the Google Books API for ISBN-based book lookup.
+
+Kartiva – E-Commerce Website | Next.js, TypeScript, Supabase, Tailwind CSS
+Live: https://kartiva.netlify.app/shop
+Built a full-stack e-commerce storefront with product listings across five categories, using Next.js, TypeScript and Supabase.
+Created a responsive UI with Tailwind CSS and shadcn/ui components.
+Used AI-assisted development tools (Kiro, Antigravity) to build and polish the application.
+
+AI Translator Web App | Python, Streamlit, Deep Translator API
+Live: https://ai-translato.netlify.app/
+Built a responsive web app that translates text across 100+ languages in real time.
+Used Git and GitHub for version control and documented the project for easy setup.
 
 EDUCATION
-• Jnana Vikas Institute of Technology – B.E. in Information Science Engineering | 2023 – 2027
-  CGPA: 8.1/10 | Coursework: Object-Oriented Programming, Database Management Systems, Data Structures
-• Sri Vasavi PU College – 12th Standard (PCMC), 87.5% | March 2023`;
+Jnana Vikas Institute of Technology – B.E. in Information Science Engineering | 2023 – 2027 | CGPA: 8.1/10
+Coursework: Object-Oriented Programming, Database Management Systems, Data Structures
+Sri Vasavi PU College – 12th Standard (PCMC), 87.5% | March 2023`;
 
     navigator.clipboard.writeText(rawResume);
     setCopiedText(true);
@@ -167,7 +166,7 @@ EDUCATION
               SIDDHARTH <span className="gradient-text-cyan-violet">HM</span>
             </h1>
             <p className="font-heading font-semibold text-sm sm:text-base text-cyan-300 mt-1">
-              Web Developer | React.js | Node.js | MERN Stack
+              Full Stack Software Engineer (Fresher) | React.js | Node.js | REST APIs | AI & LLM Projects
             </p>
 
             {/* Contact Pills */}
@@ -260,63 +259,6 @@ EDUCATION
             </div>
           </div>
 
-          {/* Projects */}
-          <div>
-            <div className="flex items-center gap-2 mb-3 text-cyan-400 font-mono text-xs uppercase tracking-widest">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-              <span>PROJECTS</span>
-            </div>
-            <div className="space-y-4">
-              {projects.map((proj) => (
-                <div
-                  key={proj.id}
-                  className="p-5 rounded-2xl bg-slate-900/50 border border-white/5 space-y-3"
-                >
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div>
-                      <h3 className="font-heading font-bold text-base text-white">
-                        {proj.title}
-                      </h3>
-                      <span className="font-mono text-xs text-cyan-300">
-                        {proj.technologies.slice(0, 5).join(' • ')}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={proj.liveDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-mono bg-cyan-500/15 text-cyan-300 border border-cyan-400/30 hover:bg-cyan-500/25"
-                      >
-                        <span>Demo</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                      <a
-                        href={proj.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-mono bg-slate-800 text-slate-300 border border-white/10 hover:text-white"
-                      >
-                        <GithubIcon className="w-3 h-3" />
-                        <span>Code</span>
-                      </a>
-                    </div>
-                  </div>
-
-                  <ul className="space-y-1.5 text-xs text-slate-300">
-                    {proj.features.map((f, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <CheckCircle className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
-                        <span>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Experience */}
           <div>
             <div className="flex items-center gap-2 mb-3 text-cyan-400 font-mono text-xs uppercase tracking-widest">
@@ -348,6 +290,63 @@ EDUCATION
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-cyan-400 font-bold">•</span>
                         <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Projects */}
+          <div>
+            <div className="flex items-center gap-2 mb-3 text-cyan-400 font-mono text-xs uppercase tracking-widest">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+              <span>PROJECTS</span>
+            </div>
+            <div className="space-y-4">
+              {projects.map((proj) => (
+                <div
+                  key={proj.id}
+                  className="p-5 rounded-2xl bg-slate-900/50 border border-white/5 space-y-3"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <h3 className="font-heading font-bold text-base text-white">
+                        {proj.title}
+                      </h3>
+                      <span className="font-mono text-xs text-cyan-300">
+                        {proj.technologies.slice(0, 5).join(' • ')}
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={proj.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-mono bg-cyan-500/15 text-cyan-300 border border-cyan-400/30 hover:bg-cyan-500/25"
+                      >
+                        <span>Live Demo</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                      <a
+                        href={proj.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-mono bg-slate-800 text-slate-300 border border-white/10 hover:text-white"
+                      >
+                        <GithubIcon className="w-3 h-3" />
+                        <span>Code</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <ul className="space-y-1.5 text-xs text-slate-300">
+                    {proj.features.map((f, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <CheckCircle className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                        <span>{f}</span>
                       </li>
                     ))}
                   </ul>
