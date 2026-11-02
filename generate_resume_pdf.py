@@ -149,7 +149,7 @@ def generate_pdf():
     story.append(Paragraph("<b>PROJECTS</b>", section_head_style))
     
     # Project 1
-    story.append(Paragraph("<b>Digital Library Management System</b> | <i>React.js, Node.js, Express.js, MongoDB</i>", bold_lead_style))
+    story.append(Paragraph("<b><a href='https://digital-library-31g52wi9s-siddharth842147s-projects.vercel.app/' color='#0F172A'>Digital Library Management System</a></b> | <i>React.js, Node.js, Express.js, MongoDB</i>", bold_lead_style))
     story.append(Paragraph("• Contributed to a full-stack college library platform covering book inventory, borrowing, returns, and QR-based student identification.", bullet_style))
     story.append(Paragraph("• Built secure authentication with JWT and Bcrypt, and integrated Razorpay and Stripe for online fine payments.", bullet_style))
     story.append(Paragraph("• Automated email notifications with Nodemailer and generated downloadable fine receipts using PDFKit.", bullet_style))
@@ -157,14 +157,14 @@ def generate_pdf():
     story.append(Spacer(1, 2))
     
     # Project 2
-    story.append(Paragraph("<b>Kartiva – E-Commerce Website</b> | <i>Next.js, TypeScript, Supabase, Tailwind CSS, shadcn/ui</i>", bold_lead_style))
+    story.append(Paragraph("<b><a href='https://kartiva.netlify.app/shop' color='#0F172A'>Kartiva – E-Commerce Website</a></b> | <i>Next.js, TypeScript, Supabase, Tailwind CSS, shadcn/ui</i>", bold_lead_style))
     story.append(Paragraph("• Built a full-stack e-commerce storefront with product listings across five categories: Books, Clothing, Electronics, Home & Kitchen, and Sports.", bullet_style))
     story.append(Paragraph("• Developed with Next.js, TypeScript, and Supabase, with a responsive UI styled using Tailwind CSS and shadcn/ui components.", bullet_style))
     story.append(Paragraph("• Used AI-assisted development tools (Kiro, Antigravity) to build and polish the application.", bullet_style))
     story.append(Spacer(1, 2))
     
     # Project 3
-    story.append(Paragraph("<b>AI Translator Web App</b> | <i>Python, Streamlit, Deep Translator API</i>", bold_lead_style))
+    story.append(Paragraph("<b><a href='https://ai-translato.netlify.app/' color='#0F172A'>AI Translator Web App</a></b> | <i>Python, Streamlit, Deep Translator API</i>", bold_lead_style))
     story.append(Paragraph("• Built a responsive web application that translates text across 100+ languages in real time.", bullet_style))
     story.append(Paragraph("• Used Git and GitHub for version control and documented the project for easy setup.", bullet_style))
     
